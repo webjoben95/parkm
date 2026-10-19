@@ -3,30 +3,176 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ParkM Terms and Conditions</title>
+  <meta name="description" content="Terms and Conditions for the Par parking app.">
+  <title>Terms and Conditions | Par</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17211b;
+      --muted: #5e6a62;
+      --line: #dfe6df;
+      --surface: #ffffff;
+      --surface-soft: #f3f7f2;
+      --accent: #296b4a;
+      --accent-dark: #1d4d35;
+      --warning: #fff6dc;
+      --warning-line: #e6c96a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #edf3ed;
+      color: var(--ink);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 48px auto;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 18px 50px rgb(30 65 42 / 10%);
+    }
+
+    header {
+      padding: 56px clamp(24px, 7vw, 72px) 48px;
+      color: #f6fbf6;
+      background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #cce9d5;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 { line-height: 1.2; }
+    h1 { max-width: 650px; margin: 0 0 16px; font-size: clamp(2.1rem, 5vw, 3.8rem); }
+    header p { max-width: 650px; margin: 0; color: #e2f1e5; font-size: 1.08rem; }
+
+    main { padding: 40px clamp(24px, 7vw, 72px) 56px; }
+    .meta { margin: 0 0 32px; color: var(--muted); font-size: 0.95rem; }
+    h2 { margin: 38px 0 12px; color: var(--accent-dark); font-size: 1.45rem; }
+    h2:first-of-type { margin-top: 0; }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 18px; padding-left: 24px; }
+    li + li { margin-top: 7px; }
+    a { color: var(--accent-dark); font-weight: 650; }
+
+    .notice {
+      margin: 0 0 34px;
+      padding: 18px 20px;
+      border: 1px solid var(--warning-line);
+      border-radius: 14px;
+      background: var(--warning);
+    }
+
+    .notice strong { display: block; margin-bottom: 4px; }
+    footer {
+      padding: 24px clamp(24px, 7vw, 72px);
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+      background: var(--surface-soft);
+    }
+
+    @media (max-width: 600px) {
+      .page { width: 100%; margin: 0; border: 0; border-radius: 0; }
+      header { padding-top: 42px; }
+      main { padding-top: 32px; }
+    }
+  </style>
 </head>
 <body>
-  <main>
-    <h1>Terms and Conditions</h1>
-    <p>By using ParkM, you agree to these terms.</p>
+  <article class="page">
+    <header>
+      <p class="eyebrow">Par · Parking companion</p>
+      <h1>Terms and Conditions</h1>
+      <p>These terms explain the rules for using the Par mobile application and its parking-related features.</p>
+    </header>
 
-    <h2>1. Service Usage</h2>
-    <p>You agree to use the service lawfully and avoid misuse.</p>
+    <main>
+      <p class="meta"><strong>Effective date:</strong> 19 October 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 19 October 2026</p>
 
-    <h2>2. Accounts and Data</h2>
-    <p>You are responsible for account security and provided information.</p>
+      <div class="notice">
+        <strong>Before publishing</strong>
+        Replace the operator and support details in Section 2 with the correct legal name, address, and email address. Do not publish this page with placeholder contact information.
+      </div>
 
-    <h2>3. Liability</h2>
-    <p>ParkM is provided as-is without warranties to the extent permitted by law.</p>
+      <h2>1. Acceptance of these terms</h2>
+      <p>By downloading, installing, accessing, or using Par (“the App”), you agree to these Terms and Conditions (“Terms”). If you do not agree, do not use the App. If you use the App on behalf of another person or an organisation, you confirm that you have authority to accept these Terms for them.</p>
 
-    <h2>Revision Updates</h2>
-    <ul>
-      <li><strong>Revision Code:</strong> REV-2026-10-19</li>
-      <li><strong>Last Updated:</strong> 2026-10-19</li>
-      <li><strong>Update Summary:</strong> Initial Terms and Conditions publication and revision tracking.</li>
-    </ul>
+      <h2>2. Who provides Par</h2>
+      <p>Par is operated by <strong>[insert operator legal name]</strong>, with registered address at <strong>[insert registered address]</strong>.</p>
+      <p>Questions, complaints, and support requests should be sent to <a href="mailto:[insert support email]">[insert support email]</a>.</p>
 
-    <p><a href="./index.html">Back to home</a></p>
-  </main>
+      <h2>3. What the App does</h2>
+      <p>Par is a parking companion that helps you remember where your vehicle is parked. Depending on the permissions and features available on your device, the App may let you:</p>
+      <ul>
+        <li>save the device’s current location as the vehicle’s parking location;</li>
+        <li>view saved coordinates and open them in a maps application;</li>
+        <li>add parking notes and take a photo of the parking place;</li>
+        <li>keep a recent parking history and set a reminder;</li>
+        <li>share saved parking details through Android’s share sheet;</li>
+        <li>prepare, but not automatically send, a parking SMS; and</li>
+        <li>open the official Ghișeul.ro website for relevant tax payments.</li>
+      </ul>
+
+      <h2>4. Your responsibilities</h2>
+      <p>You must use the App lawfully and responsibly. You are responsible for:</p>
+      <ul>
+        <li>providing accurate information, including the recipient number and message details for any parking SMS;</li>
+        <li>checking all location, duration, vehicle, recipient, and payment information before relying on it;</li>
+        <li>complying with parking signs, local regulations, payment deadlines, and the terms of any third-party service;</li>
+        <li>protecting access to your device and any information saved in the App; and</li>
+        <li>ensuring that you have the right to capture, store, and share any photo or document you add.</li>
+      </ul>
+
+      <h2>5. Location, camera, and device permissions</h2>
+      <p>The App may request access to your device’s location to save the place where you parked. It may request camera access when you choose to take a parking photo. You can refuse or later revoke these permissions, but related features may not work. Location accuracy depends on your device, signal, environment, and the location services available at the time.</p>
+      <p>The App is not a navigation, emergency, security, or vehicle-recovery service. Never use it as a substitute for observing your surroundings or following official directions.</p>
+
+      <h2>6. Parking SMS and payments</h2>
+      <p>Par only prepares an SMS or opens a third-party payment service. It does not send an SMS without your action, process card details, confirm parking entitlement, or guarantee that a payment or parking session has been accepted.</p>
+      <p>SMS delivery, carrier charges, parking tariffs, local shortcodes, availability, receipts, and payment processing are controlled by your mobile operator, parking authority, bank, or other third party. You must verify the result directly with the relevant provider. The official Ghișeul.ro website is governed by its own terms and privacy policy.</p>
+
+      <h2>7. Data and privacy</h2>
+      <p>Par is designed to keep saved parking information locally on your device. The App may still rely on Android, Google Play services, maps, your mobile operator, and other third-party services to provide selected features. Those services may process information under their own policies.</p>
+      <p>For details about personal data, permissions, retention, and your rights, read the Par Privacy Policy. If a separate Privacy Policy is not yet available, do not publish this page as a complete privacy notice.</p>
+
+      <h2>8. Third-party services</h2>
+      <p>Links and handoffs to maps, Ghișeul.ro, SMS applications, app stores, and other services are provided for convenience. Par does not control those services and is not responsible for their availability, content, security, accuracy, or terms. Your use of them is subject to the relevant provider’s conditions.</p>
+
+      <h2>9. Availability and disclaimers</h2>
+      <p>We aim to keep Par useful and available, but the App is provided on an “as available” basis. To the maximum extent permitted by law, we do not guarantee that the App will be uninterrupted, error-free, compatible with every device, or able to determine an exact parking location.</p>
+      <p>You remain responsible for your vehicle, parking decisions, payments, messages, and compliance with applicable law. Nothing in these Terms excludes or limits liability that cannot legally be excluded or limited.</p>
+
+      <h2>10. Intellectual property</h2>
+      <p>Par, including its name, design, software, and original content, is owned by or licensed to the operator and is protected by applicable intellectual-property laws. Subject to these Terms, you receive a limited, non-exclusive, non-transferable, revocable licence to use the App for personal, lawful purposes. You must not copy, modify, reverse engineer, redistribute, or commercially exploit the App except where applicable law expressly permits it.</p>
+
+      <h2>11. Suspension and termination</h2>
+      <p>You may stop using and uninstall the App at any time. We may suspend or discontinue the App, or restrict access where reasonably necessary to protect the App, its users, or third parties, to comply with law, or to address misuse. Uninstallation may not delete information already shared with third-party services.</p>
+
+      <h2>12. Changes to these Terms</h2>
+      <p>We may update these Terms when the App, its features, or legal requirements change. The updated version will show a new “Last updated” date. Where required by law, we will provide additional notice. Continued use after the updated Terms take effect means you accept them.</p>
+
+      <h2>13. Governing law and disputes</h2>
+      <p>These Terms are governed by the laws of Romania, without prejudice to any mandatory consumer protections that apply in your country of residence. The competent courts of Romania will have jurisdiction, unless applicable law gives you the right to bring a claim elsewhere.</p>
+
+      <h2>14. Contact</h2>
+      <p>For questions about these Terms, contact <a href="mailto:[insert support email]">[insert support email]</a>. Please include “Terms and Conditions” in the subject line.</p>
+    </main>
+
+    <footer>
+      Par · Terms and Conditions · Effective 19 October 2026
+    </footer>
+  </article>
 </body>
 </html>
